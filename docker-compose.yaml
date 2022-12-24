@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  conda:
+    build:
+      context: .
+    volumes: 
+      - .:/data
+    ports: 
+      - 8888:8888
+
