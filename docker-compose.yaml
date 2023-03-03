@@ -9,3 +9,11 @@ services:
     ports: 
       - 8888:8888
 
+  mysql:
+    image: mysql:8.0.23
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql/:/var/lib/mysql

@@ -5,7 +5,11 @@ RUN conda install \
     bottleneck \
     numpy \
     pandas \
+    openpyxl \
     matplotlib \
     jupyterlab \
-    scipy
+    scipy \
+    requests \ 
+    bs4 \
+    mysql-connector-python
 CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root"]
